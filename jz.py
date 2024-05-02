@@ -38,9 +38,9 @@ create_tables()
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     keyboard = types.InlineKeyboardMarkup(row_width=1)
-    btn1 = types.InlineKeyboardButton('查看使用帮助', url='https://t.me/aaaaaaaaaa666666666666666666')
-    btn2 = types.InlineKeyboardButton('点击这里把我添加进群组', url='https://t.me/x_dbbot?startgroup=true')
-    btn3 = types.InlineKeyboardButton('官方频道', url='https://t.me/aaaaaaaaaa666666666666666666')
+    btn1 = types.InlineKeyboardButton('福利来官方频道', url='https://t.me/FLLG1')
+    # btn2 = types.InlineKeyboardButton('点击这里把我添加进群组', url='https://t.me/x_dbbot?startgroup=true')
+    # btn3 = types.InlineKeyboardButton('官方频道', url='https://t.me/aaaaaaaaaa666666666666666666')
     keyboard.add(btn1, btn2, btn3)
     bot.send_message(message.chat.id, "您好，我可以为您记账，请称呼我为记账小助手！很高兴认识您~", reply_markup=keyboard)
 
