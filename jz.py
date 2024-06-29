@@ -38,9 +38,9 @@ create_tables()
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     keyboard = types.InlineKeyboardMarkup(row_width=1)
-    btn1 = types.InlineKeyboardButton('福利来官方频道', url='https://t.me/FLLG1')
-    # btn2 = types.InlineKeyboardButton('点击这里把我添加进群组', url='https://t.me/x_dbbot?startgroup=true')
-    # btn3 = types.InlineKeyboardButton('官方频道', url='https://t.me/aaaaaaaaaa666666666666666666')
+    btn1 = types.InlineKeyboardButton('查看使用帮助', url='https://t.me/mofajia')
+    btn2 = types.InlineKeyboardButton('点击这里把我添加进群组', url='https://t.me/x_dbbot?startgroup=true')
+    btn3 = types.InlineKeyboardButton('官方频道', url='https://t.me/mofajia')
     keyboard.add(btn1, btn2, btn3)
     bot.send_message(message.chat.id, "您好，我可以为您记账，请称呼我为记账小助手！很高兴认识您~", reply_markup=keyboard)
 
@@ -242,10 +242,10 @@ def handle_transaction(message):
 
     # 创建一个按钮
     keyboard = types.InlineKeyboardMarkup(row_width=2)  # 设置每行的按钮数量为2
-    button1 = types.InlineKeyboardButton(text="福利来供需", url="https://t.me/FLLG8")
-    button2 = types.InlineKeyboardButton(text="福利来担保", url="https://t.me/fllww")
-    button3 = types.InlineKeyboardButton(text="福利来公群", url="https://t.me/FLLG1")
-    button4 = types.InlineKeyboardButton(text="福利来导航", url="https://t.me/FLLDH")
+    button1 = types.InlineKeyboardButton(text="按钮1", url="https://t.me/mofajia")
+    button2 = types.InlineKeyboardButton(text="按钮2", url="https://t.me/mofajia")
+    button3 = types.InlineKeyboardButton(text="按钮3", url="https://t.me/mofajia")
+    button4 = types.InlineKeyboardButton(text="按钮4", url="https://t.me/mofajia")
     keyboard.add(button1, button2)
     keyboard.add(button3, button4)
 
